@@ -1,0 +1,695 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mate SC', serif;
+}
+
+html, body {
+    width: 100%;
+}
+
+/**Divs Gerais**/
+.container{
+    width: 100%;
+    margin: auto;
+    max-width: 1400px;
+}
+
+.clear{
+    clear: both;
+}
+/*****/
+
+
+/* INICIO DO HEADER */
+
+header .logo{
+    width: 170px;
+    height: 65px;
+    margin-left: 2%;
+    margin: 5px;
+    margin-left: 50px;    
+}
+
+header .logo img{
+    width: 25px;
+    display: inline-block;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    left: 5px;
+    top: -10px;
+}
+
+header .logo h2{
+    font-family: 'Herr Von Muellerhoff', cursive;
+    font-weight: normal;
+    font-size: 40px;
+    text-align: center;
+}
+
+header .logo p{
+    font-family: 'Herr Von Muellerhoff', cursive;
+    text-align: center;
+    font-size: 20px;
+    position: relative;
+    top: -15px;
+}
+
+header .container{
+    z-index: 10;
+    display: flex;
+    max-height: 80px;
+    justify-content: space-between;
+    background-color: rgb(153, 201, 202);
+}
+
+/* MENU MOBILE */
+
+
+nav.mobile-menu{
+	cursor: pointer;
+	display: none;
+	width: 40px;
+	height: 40px;
+    margin-top: 10px;
+    margin-right: 20px;
+	background-image: url('../imagens/menu1.png');
+	background-size: 100% 100%;
+}
+
+nav.mobile-menu ul{
+	opacity: 0;
+	transition: 1s;
+	background-color: white;
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 80px;
+	list-style-type: none;
+	text-align: center;
+}
+
+nav.mobile-menu ul li{
+	padding:8px 0;
+	transition: 0.4s;
+	border-bottom: 1px solid black;
+}
+
+nav.mobile-menu ul li:hover{
+	background-color: rgb(230,230,230);
+}
+
+nav.mobile-menu ul li a{
+	color: black;
+	text-decoration: none;
+}
+
+/* MENU DESKTOP */
+header nav.menu-desktop ul{
+    display: flex;
+    padding: 20px;
+    margin-left: -2%;
+    margin-right: 20px;
+}
+
+header nav.menu-desktop ul li{
+    list-style: none;
+}
+
+header nav.menu-desktop ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    padding-left: 20px;
+    cursor: pointer;
+    color: black;
+}
+/** FIM HEADER **/
+
+/** INICIO DO BANNER **/
+section.sec-banner .banner{
+    width: 100%;
+    height: 500px;
+    background-image: url(../imagens/banner.jpg);
+    background-size: cover;
+    background-position-y:center;
+    background-repeat: no-repeat;  
+    z-index: -1;
+}
+
+section.sec-banner {
+    width: 100%;
+    height: 500px;
+    background: rgba(92, 92, 92, 0.5);
+}
+
+section.sec-banner .container .conteudo-banner{
+    position: relative;
+    float: right;
+    top: 200px;
+    right: 15%;
+    width: 400px;
+    max-width: 800px;
+    border: 2px solid rgba(236, 236, 236, 0.973);
+}
+
+section.sec-banner .container .conteudo-banner h2{
+    text-align: left;
+    font-size: 25px;
+    padding: 10px;
+}
+
+section.sec-banner .container .conteudo-banner p{
+    font-size: 14px;
+    padding: 10px;
+    text-align: justify;
+}
+/** FIM BANNER **/
+
+/** INICIO SEÇÃO SERVIÇOS **/
+section.sec-servicos{
+    padding: 40px 0;
+    background-color: beige;
+    background-image: linear-gradient(to bottom,width,beige, rgb(184, 160, 131));
+}
+
+section aside.seta-esq{
+    cursor: pointer;
+    position: relative;
+    transform: rotate(180deg);
+    margin-left: 5%;
+    top: 300px;
+    width: 50px;
+    height: 50px;
+    background-image: url(../imagens/seta-dir.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+section aside.seta-dir{
+    cursor: pointer;
+    position: relative;
+    float: right;
+    margin-right: 5%;
+    top: 250px;
+    width: 50px;
+    height: 50px;
+    background-image: url(../imagens/seta-dir.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+section.sec-servicos .container{
+    max-width: 800px;
+    background-color: bisque;
+    background-image: linear-gradient(to bottom , beige, rgb(184, 160, 131));    
+}
+
+/** FOTOS 1**/
+section.sec-servicos .designer{
+    padding-top: 60%;
+    margin: 1%;
+    position: relative;
+}
+
+section.sec-servicos .designer-conteudo{
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+section.sec-servicos .designer-foto{
+    width: 40%;
+    height: 100%;
+    background-image: url(../imagens/foto-designer2.jpeg);
+    background-size: 100% 100%;
+    border: 1px solid black;
+}
+
+section.sec-servicos .designer-sobre{
+    width: 60%;
+    padding: 0 30px;
+}
+
+
+section.sec-servicos .designer .designer-sobre h2{
+    font-size: 40px;
+    font-weight: normal;
+    padding-bottom: 20px;
+}
+
+section.sec-servicos .designer .designer-sobre p{
+    text-align: justify;
+    margin-right: 2%;
+}
+
+/**FOTOS 2**/
+
+section.sec-servicos .limpeza-pele{
+    display: none;
+    padding-top: 60%;
+    margin: 1%;
+    position: relative;
+}
+
+section.sec-servicos .limpeza-pele .limpeza-pele-conteudo{
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+section.sec-servicos .limpeza-pele .limpeza-pele-foto{
+    width: 40%;
+    height: 100%;
+    background-image: url(../imagens/foto-limpeza-pele.jpeg);
+    background-size: 100% 100%;
+    border: 1px solid black;
+}
+
+section.sec-servicos .limpeza-pele .limpeza-pele-sobre{
+    width: 60%;
+    padding: 0 30px;
+}
+
+
+section.sec-servicos .limpeza-pele .limpeza-pele-sobre h2{
+    font-size: 40px;
+    font-weight: normal;
+    padding-bottom: 20px;
+}
+
+section.sec-servicos .limpeza-pele .limpeza-pele-sobre p{
+    text-align: justify;
+    margin-right: 2%;
+}
+
+/** FOTO3 **/
+
+section.sec-servicos .micro{
+    display: none;
+    padding-top: 60%;
+    margin: 1%;
+    position: relative;
+}
+
+section.sec-servicos .micro .micro-conteudo{
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+section.sec-servicos .micro .micro-foto{
+    width: 40%;
+    height: 100%;
+    background-image: url(../imagens/foto-designer3.jpeg);
+    background-size: 100% 100%;
+    border: 1px solid black;
+}
+
+section.sec-servicos .micro .micro-sobre{
+    width: 60%;
+    padding: 0 30px;
+}
+
+
+section.sec-servicos .micro .micro-sobre h2{
+    font-size: 40px;
+    font-weight: normal;
+    padding-bottom: 20px;
+}
+
+section.sec-servicos .micro .micro-sobre p{
+    text-align: justify;
+    margin-right: 2%;
+}
+
+/** FIM SEÇÃO SERVIÇOS **/
+
+/** INICIO SECÇÃO CONTATO **/
+/**  FORM **/
+
+section.sec-contato{
+	background-color: #474747;
+	padding:100px 0;
+}
+
+.form{
+	float: left;
+	width: 50%;
+	color: white;
+	padding-left: 10px;
+}
+
+.form h2{
+	font-size: 23px;
+	font-weight: 300;
+}
+
+.form p{
+	font-size: 15px;
+	font-weight: 300;
+    text-align: justify;
+	max-width: 400px;
+	padding-right: 10px;
+}
+
+.form form{
+	margin-top:15px;
+}
+
+.form form input[type=text]{
+	width: 90%;
+	max-width: 480px;
+	margin-top:8px;
+	height: 58px;
+	padding-left: 8px;
+    font-size: 15px;
+	line-height: 58px;
+	border:1px solid rgb(200,200,200);
+}
+
+.form form textarea{
+	width: 90%;
+	margin-top:8px;
+	max-width: 480px;
+    font-size: 15px;
+	padding:15px;
+	border:1px solid rgb(200,200,200);
+	height: 160px;
+}
+
+.form form input[type=submit]{
+	border: 0;
+	background-color: rgb(153, 201, 202);
+	width: 165px;
+	height: 44px;
+	font-size: 18px;
+	color: black;
+	cursor: pointer;
+	margin-top:15px;
+	border-radius: 30px;
+}
+/** FIM FORM**/
+
+/** INICIO MAPA**/
+
+.map-wraper{
+	float: left;
+	width: 50%;
+	padding:0 10px;
+	color: white;
+}
+
+.map-wraper h2{
+	font-size: 23px;
+	font-weight: 300;
+}
+
+.map-wraper3{
+	margin-top:10px;
+	width: 100%;
+	max-width: 480px;
+	position: relative;
+}
+
+.map-wraper2{
+	position: absolute;
+	left: 0;
+	top:0;
+	width: 100%;
+	padding-top:100%;
+}
+
+.map{
+	left: 0;
+	top: 0;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: white;
+	border:5px solid rgb(200,200,200);
+}
+
+/** FIM MAPA **/
+
+/** FIM CONTATO **/
+
+/** INICIO FOOTER **/
+footer .container{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: black;
+}
+
+footer .social-media{
+    width: 50%;
+    margin: 3%;
+}
+
+.social-media img{
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+}
+
+footer .direitos{
+    color: white;
+    font-size: 10px;
+    margin-top: 4%;
+    margin-right: 3%;
+}
+/** FIM FOOTER **/
+
+/** MEDIA QUERY **/
+@media screen and (max-width:995px) {
+    
+section aside.seta-esq{
+    margin-left: 0.2%;
+}
+
+section aside.seta-dir{
+    margin-right: 0.2%;
+}
+  
+}
+
+@media screen and (max-width:895px){
+
+    section aside.seta-esq{
+        top: 150px;
+        margin-left: 5%;
+        z-index: 10;
+    }
+    
+    section aside.seta-dir{
+        top: 105px;
+        margin-right: 5%;
+        z-index: 10;
+    }
+
+    /** FOTO 1 **/
+    section.sec-servicos .container{
+        position: relative;   
+        top: 48px;
+        max-width: 100%;
+        width: 100%;
+    }
+        
+    section.sec-servicos .designer{
+        padding-top: 60%;
+        margin: 1%;
+        position: relative;
+    }
+
+    section.sec-servicos .designer-conteudo{   
+        top: -170px;   
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section.sec-servicos .designer-foto{
+        margin-bottom: 50px;
+    }
+
+    section.sec-servicos .designer-sobre{
+        width: 90%;
+    }
+
+
+    section.sec-servicos .designer .designer-sobre h2{
+        text-align: center;
+    }
+
+    section.sec-servicos .designer .designer-sobre p{
+        text-align: justify;
+        margin-right: 2%;
+    }
+
+    /** FOTO 2 **/
+    
+    
+    section.sec-servicos .container{
+        position: relative;   
+        top: 48px;
+        max-width: 100%;
+        width: 100%;
+    }
+        
+    section.sec-servicos .limpeza-pele{
+        padding-top: 80%;
+        margin: 1%;
+        position: relative;
+        top: -120px;
+    }
+
+    section.sec-servicos .limpeza-pele-conteudo{   
+        top: -170px;   
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section.sec-servicos .limpeza-pele-foto{
+        margin-bottom: 50px;
+    }
+
+    section.sec-servicos .limpeza-pele-sobre{
+        width: 90%;
+    }
+
+
+    section.sec-servicos .limpeza-pele .limpeza-pele-sobre h2{
+        text-align: center;
+    }
+
+    section.sec-servicos .limpeza-pele .limpeza-pele-sobre p{
+        text-align: justify;
+        margin-right: 2%;
+    }
+        
+}
+
+
+@media screen and (max-width: 665px) {
+    header nav.menu-desktop{
+        display: none;
+    }
+
+    header nav.mobile-menu{
+       display: flex;
+    }
+
+    section.sec-servicos .designer{
+        padding-top: 100px;
+        margin: 1%;
+        position: relative;
+    }   
+
+    section.sec-servicos .designer-conteudo{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+    
+    section.sec-servicos .designer-foto{
+       display: none;
+    }
+    
+    section.sec-servicos .designer-sobre{
+        width: 70%;
+        padding: 1px;
+    }
+       
+    section.sec-servicos .designer .designer-sobre p{
+        margin-right: 2%;
+        margin-left: 2%;
+    }
+    
+    /**FOTOS 2**/
+    
+    section.sec-servicos .limpeza-pele{
+        display: none;
+        padding-top: 100px;
+        margin: 1%;
+        position: relative;
+    }
+    
+    
+    section.sec-servicos .limpeza-pele .limpeza-pele-foto{
+        display: none;
+    }
+    
+    section.sec-servicos .limpeza-pele .limpeza-pele-sobre{
+        width: 70%;
+        padding: 0;
+    }
+        
+    section.sec-servicos .limpeza-pele .limpeza-pele-sobre p{
+        margin-right: 2%;
+        margin-left: 2%;
+    }
+
+
+    section.sec-contato{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding:80px 0;
+    }
+    
+    .form{
+        text-align: center;
+        float: none;
+        width: 100%;
+        padding: 0 auto;
+    }
+
+    .form h2{
+        text-align: center;
+        padding-bottom: 15px;
+    }
+    
+    .form p{
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    /** FIM FORM**/
+    
+    /** INICIO MAPA**/
+    
+    .map-wraper{
+        float: none;
+        width: 100%;
+        height: 500px;
+    }
+    
+    .map-wraper h2{
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 15px;
+    }
+    
+    .map-wraper3{
+        margin: 0 auto;
+        padding: 2%;
+    }
+
+}
+
+/** FIM MEDIA **/
