@@ -491,7 +491,6 @@ section aside.seta-dir{
 }
   
 }
-
 @media screen and (max-width:830px){
 
     section aside.seta-esq{
@@ -707,8 +706,6 @@ section aside.seta-dir{
     section.sec-servicos .container{
         height: 250px;
     }
-    
-}
 
 
 /** FIM MEDIA **/
