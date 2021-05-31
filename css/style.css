@@ -698,9 +698,8 @@ section aside.seta-dir{
 @media screen and (max-width: 580px) {
     section.sec-banner .container .conteudo-banner{
         float: none;
-        margin: 0 auto;
-        width: 400px;
-        max-width: 800px;
+        width: 350px;
+        margin-left: 16%; 
     }
 
     section.sec-servicos .container{
