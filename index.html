@@ -12,7 +12,10 @@
 
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js" defer></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/menu-responsivo.js"></script>
+    <script src="js/menuScroll.js"></script>
+    <script src="js/functions.js" ></script>
 </head>
 <body>
     <header>
@@ -25,18 +28,18 @@
             <nav class="menu-desktop" id="btn-menu">
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">Serviços</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="#mapa">Faça uma Visita</a></li>
                 </ul>
             </nav><!--menu-desktop-->
 
             <nav class="mobile-menu" id="btn-mobile">
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">Serviços</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="#mapa">Faça uma Visita</a></li>
                 </ul>
             </nav><!--menu-mobile-->
 
@@ -55,13 +58,15 @@
         </div><!--container-->
     </section><!--sec-banner-->
 
-    <section class="sec-servicos">
-        <aside class="seta-esq" id="seta-esq"></aside><!--seta-dir-->
-        <aside class="seta-dir" id="seta-dir"></aside><!--seta-dir-->
+    <section id="servicos" class="sec-servicos">
+    <!--
+        <aside class="seta-esq" id="seta-esq"></aside>
+        <aside class="seta-dir" id="seta-dir"></aside>
+    -->
         <div class="clear"></div>
             <div class="container" id="container-fotos">
                 
-                <div class="designer" id="designer">
+                <div class="fotos designer" id="designer">
                     <div class="designer-conteudo">
                         <div class="designer-foto"></div><!--designer-foto-->
                         <div class="designer-sobre">
@@ -73,7 +78,7 @@
                     </div><!--designer-conteudo-->
                 </div><!--designer-->
 
-                <div class="limpeza-pele" id="limpeza-pele">
+                <div class="fotos limpeza-pele" id="limpeza-pele">
                     <div class="limpeza-pele-conteudo">
                         <div class="limpeza-pele-foto"></div><!--designer-foto-->
                         <div class="limpeza-pele-sobre">
@@ -85,7 +90,7 @@
                     </div><!--limpeza-pele-conteudo-->
                 </div><!--limpeza-pele-->
 
-                <div class="micro" id="micro">
+                <div class="fotos micro" id="micro">
                     <div class="micro-conteudo">
                         <div class="micro-foto"></div><!--designer-foto-->
                         <div class="micro-sobre">
@@ -102,7 +107,7 @@
     </section><!--sec-servicos-->
 
 
-    <section class="sec-contato">
+    <section id="contato" class="sec-contato">
         <div class="container">
             <div class="form">
                 <h2>Entre em contato</h2>
@@ -122,7 +127,7 @@
     
             </div><!--form-->
     
-        <div class="map-wraper">
+        <div id="mapa" class="map-wraper">
         <h2>Faça uma visita</h2>
             <div class="map-wraper3">
             <div class="map-wraper2">

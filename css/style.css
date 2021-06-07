@@ -80,8 +80,7 @@ nav.mobile-menu{
 }
 
 nav.mobile-menu ul{
-	opacity: 0;
-	transition: 1s;
+	display: none;
 	background-color: white;
 	position: absolute;
 	width: 100%;
@@ -101,15 +100,15 @@ nav.mobile-menu ul li:hover{
 	background-color: rgb(230,230,230);
 }
 
-nav.mobile-menu:hover ul{
-	opacity: 1;
-}
-
 nav.mobile-menu ul li a{
 	color: black;
 	text-decoration: none;
 }
-
+/*
+nav.mobile-menu:hover ul{
+    opacity: 1;
+}
+*/
 /* MENU DESKTOP */
 header nav.menu-desktop ul{
     display: flex;
@@ -491,6 +490,7 @@ section aside.seta-dir{
 }
   
 }
+
 @media screen and (max-width:830px){
 
     section aside.seta-esq{
@@ -583,6 +583,44 @@ section aside.seta-dir{
         text-align: justify;
         margin-right: 2%;
     }
+
+     /** FOTO 1 **/
+    section.sec-servicos .container{
+        position: relative;   
+        top: 48px;
+        max-width: 100%;
+        width: 100%;
+    }
+        
+    section.sec-servicos .designer{
+        padding-top: 60%;
+        margin: 1%;
+        position: relative;
+    }
+
+    section.sec-servicos .designer-conteudo{   
+        top: -170px;   
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section.sec-servicos .designer-foto{
+        margin-bottom: 50px;
+    }
+
+    section.sec-servicos .designer-sobre{
+        width: 90%;
+    }
+
+
+    section.sec-servicos .designer .designer-sobre h2{
+        text-align: center;
+    }
+
+    section.sec-servicos .designer .designer-sobre p{
+        text-align: justify;
+        margin-right: 2%;
+    }
         
 }
 
@@ -610,7 +648,7 @@ section aside.seta-dir{
     }
     
     section.sec-servicos .designer-foto{
-       display: none;
+       display: block;
     }
     
     section.sec-servicos .designer-sobre{
@@ -698,12 +736,12 @@ section aside.seta-dir{
 @media screen and (max-width: 580px) {
     section.sec-banner .container .conteudo-banner{
         float: none;
-        width: 350px;
-        margin-left: 16%; 
+        margin: 0 auto;
+        width: 400px;
+        max-width: 800px;
     }
 
     section.sec-servicos .container{
         height: 250px;
     }
 }
-/** FIM MEDIA **/
